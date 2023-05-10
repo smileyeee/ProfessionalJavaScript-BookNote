@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let s1 = 'smileye';
+        // let s2 = s1.substring(2);
+        // console.log(s2);
+
+        // // 以下两种方式等价，都是object
+        // let obj1 = new String('smi');
+        // console.log(typeof obj1);
+        // let obj2 = new Object('smi');
+        // console.log(typeof obj2)
+        
+        // let s = String('smileye'); // 这不是构造函数，而是转型函数
+        // console.log(typeof s); // String
+
+        // let falseObject = new Boolean(false);
+        // let falseValue = false;
+        // console.log(typeof falseObject); // object
+        // console.log(typeof falseValue); // Boolean
+        // console.log(falseObject instanceof Boolean); // true
+        // console.log(falseValue instanceof Boolean); // false
+
+        let num = 99;
+        console.log(num.toPrecision(1)); // '1e+2', 只用一位表示，所以四舍五入到了100然后以科学计数法表示了
+        console.log(num.toPrecision(2)); // 99
+        console.log(num.toPrecision(3)); // 99.0
+    </script>
+</body>
+</html>

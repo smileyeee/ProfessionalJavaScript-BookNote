@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // min max
+        // let arr = [1, 2, 3, 4, 5];
+        // console.log(Math.min(...arr));
+
+        // // random 从一组整数中随机选取一个随机数
+        function selectFrom(begin, end){
+            const choices = end - begin + 1;
+            return Math.floor(Math.random() * choices) + begin; 
+        }
+
+        let num = selectFrom(3, 10); // 随机选取3到10之间的整数
+        
+        let arr = [3, 4, 6, 9, 11];
+        let num_from_arr = arr[selectFrom(0, arr.length-1)]; // 随机选取数组的一个元素
+        console.log(num, num_from_arr);
+    </script>
+</body>
+</html>
